@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Image Viewer</h1>
+        <div id="dropZone" class="drop-zone">
+            <div class="drop-icon">
+                <img id="upload-icon" src="upload-icon.svg" alt="Upload" />
+            </div>
+            <p class="text">Drag & Drop the Image here</p>
+            <p class="or-text">or</p>
+            <button class="upload-btn">Browse Files</button>
+        </div>
+        <div class="input-container">
+            <input type="file" id="fileInput" accept="image/png,image/jpeg,image/svg+xml" style="display: none;">
+            <textarea id="svgInput" class="svg-textarea" rows="6" placeholder="Paste SVG code here"></textarea>
+            <button id="reset-button" class="reset-btn">
+                <img src="reload-icon.svg" alt="Reset" style="width: 20px; height: 20px;">
+            </button>
+        </div>
+
+ <!-- result container -->
+        <div id="resultContainer" class="result-container">
+            <div id="svgContainer" class="svg-preview" style="cursor: grab;">
+                <!-- SVG content goes here -->
+            </div>
+            <img id="preview" class="image-preview" />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

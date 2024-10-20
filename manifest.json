@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Image Viewer",
+  "version": "2.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+I"
+      },
+      "description": "Thank you for your interest in our new browser extension! It enables you to preview SVG, PNG, and JPEG images directly in your browser, making your browsing experience smoother and more efficient. With its intuitive interface, you can easily view images without any hassle. This tool is perfect for designers, developers, and anyone who frequently works with images. Best of all, it's free! We welcome your suggestions and feedback to help us improve. Enjoy using the extension!"
+    }
+  }
+}
